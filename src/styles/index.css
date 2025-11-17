@@ -4,65 +4,41 @@
   --line-height: 1.5;
   --font-weight: 400;
   
-  --color-text: #e0e0e0;           
-  --background-color: #141414;     
+  --color-text: #222222;           
+  --background-color: #f5f5f5;     
   --accent-color: #39ff14;         
   --border-color: #222;            
-  
+}
+
+html {
   font-family: var(--font-family);
-  font-size: var(--base-font-size);
-  line-height: var(--line-height);
-  font-weight: var(--font-weight);
-  
-  color-scheme: dark;
-  color: var(--color-text);
-  background-color: var(--background-color);
-  
+  height: 100%;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* base (mobile first) */
-.container {
-  display: block;
-  padding: 1rem;
-  font-size: 14px;
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--color-text);
+  display: flex;
   flex-direction: column;
 }
 
-
-/* TODO: Fix the media queries to be more responsive */
-
-/* Extra small devices (phones) */
-@media (max-width: 639px) {
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
-/* Small devices (large phones) */
-@media (min-width: 640px) and (max-width: 767px) {
-}
+/* TODO: Add media queires for fast reactive dynmic window changes*/
 
-/* Medium devices (tablets) */
-@media (min-width: 768px) and (max-width: 1023px) {
-}
-
-/* Large devices (laptops/desktops) */
-@media (min-width: 1024px) and (max-width: 1279px) {
-}
-
-/* Extra large devices (large desktops) */
-@media (min-width: 1280px) and (max-width: 1535px) {
-}
-
-/* 2XL devices (ultrawide or 2K+) */
-@media (min-width: 1536px) {
-}
-
-
-
-/* Reset */
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
