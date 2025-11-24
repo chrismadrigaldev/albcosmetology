@@ -13,7 +13,6 @@
     "deploy": "gh-pages -d dist",
     "full-deploy": "bun run predeploy && bun run deploy",
     "remind-me": "bun run scripts/remind-me.ts"
-
   },
   "dependencies": {
     "@react-spring/three": "^9.7.5",
@@ -43,6 +42,7 @@
     "vite": "^6.1.1"
   },
   "trustedDependencies": [
-    "@swc/core"
+    "@swc/core",
+    "esbuild"
   ]
 }
