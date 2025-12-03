@@ -1,14 +1,13 @@
-import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
-
-const Home = lazy(() => import('./pages/Home.tsx'));
+import PageLayout from './components/utils/PageLayout.tsx';
+import { Home } from './pages/Home.tsx';
 
 export const ALBCosmetology = () => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <PageLayout>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-    </Suspense>
+    </PageLayout>
   );
 };

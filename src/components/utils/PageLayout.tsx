@@ -5,11 +5,13 @@ import { Footer } from "../footer/Footer";
 type PageLayoutProps = { children : ReactNode };
 
 const PageLayout = ({ children }: PageLayoutProps) => {
-    <>
-        <Navbar />
-        {children}
-        <Footer />
-    </>
+    return (
+        <>
+            <Navbar />
+            {children}
+            <Footer />
+        </>
+    );
 };
 
 export default PageLayout;
