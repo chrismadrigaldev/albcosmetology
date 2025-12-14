@@ -1,5 +1,7 @@
 :root {
-  --font-family: 'Almendra', serif;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
+
   --base-font-size: 16px;
   --line-height: 1.5;
   --font-weight: 400;
@@ -11,7 +13,8 @@
 }
 
 html {
-  font-family: var(--font-family);
+  font-family: var(--font-body);
+  font-size: var(--base-font-size);
   height: 100%;
 
   font-synthesis: none;
@@ -28,15 +31,65 @@ body {
   color: var(--color-text);
   display: flex;
   flex-direction: column;
+  line-height: var(--line-height);
 }
 
 main {
   display: flex;
   flex: 1;
   flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;   
 }
 
-/* TODO: Add media queires for fast reactive dynmic window changes*/
+/* ===========================
+   XS — Phones (extra small)
+   max-width: 480px
+   =========================== */
+@media (max-width: 480px) {
+  
+}
+
+/* ===========================
+   SM — Phones (large)
+   max-width: 640px
+   =========================== */
+@media (max-width: 640px) {
+  
+}
+
+/* ===========================
+   MD — Tablets
+   max-width: 768px
+   =========================== */
+@media (max-width: 768px) {
+  
+}
+
+/* ===========================
+   LG — Small laptops
+   max-width: 1024px
+   =========================== */
+@media (max-width: 1024px) {
+
+}
+
+/* ===========================
+   XL — Desktop
+   max-width: 1280px
+   =========================== */
+@media (max-width: 1280px) {
+
+}
+
+/* ===========================
+   2XL — Large Desktop / 1440p
+   max-width: 1536px
+   =========================== */
+@media (max-width: 1536px) {
+
+}
 
 *, *::before, *::after {
   margin: 0;

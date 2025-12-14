@@ -1,13 +1,11 @@
 import { CSSProperties } from "react";
 
 export const navbarContainerStyle: CSSProperties = {
-    alignItems: "center",
-    backgroundColor: "#000000",
-    display: "flex",
-    justifyContent: "space-between",
-    top: 0,
-    left: 0,
-    maxHeight: "200px",
+    width: "100%",
+    maxWidth: "1200px",
+    margin: "0 auto",
     padding: "1rem",
-    width: "100%"
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between"
 };
