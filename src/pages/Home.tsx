@@ -1,7 +1,7 @@
 export const Home = () => {
   return (
     <main>
-      <p>ALB Cosmetology</p>
+      <h1>This will be the home page of the website!</h1>
     </main>
   );
 };

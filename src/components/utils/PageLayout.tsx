@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import { Header } from "../header/Header";
 import { Footer } from "../footer/Footer";
+import { Navbar } from "../header/Navbar";
 
 type PageLayoutProps = { children : ReactNode };
 
@@ -8,7 +8,7 @@ const PageLayout = ({ children }: PageLayoutProps) => {
     return (
         <>
             
-            <Header />
+            <Navbar />
             {children}
             <Footer />
         </>
