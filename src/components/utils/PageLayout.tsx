@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Footer } from "../footer/Footer";
-import { Navbar } from "../header/Navbar";
+import { Navbar } from "../navbar/Navbar";
 
 type PageLayoutProps = { children : ReactNode };
 
