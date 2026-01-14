@@ -1,14 +1,8 @@
+import { navbarLinksListStyle } from "../../../styles/header/navbarStyles";
+
 export const NavbarLinks = () => {
     return (
-        <ul
-            style={{
-                margin: 0,
-                padding: 0,
-                listStyle: "none",
-                display: "flex",
-                gap: "25px",
-            }}
-        >
+        <ul style={navbarLinksListStyle}>
             <li><a href="/" style={{ textDecoration: "none", color: "#222222" }}>Home</a></li>
             <li><a href="/contact" style={{ textDecoration: "none", color: "#222222" }}>Contact</a></li>
             <li><a href="/portfolio" style={{ textDecoration: "none", color: "#222222" }}>Portfolio</a></li>
