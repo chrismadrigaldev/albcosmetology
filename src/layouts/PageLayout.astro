@@ -1,0 +1,40 @@
+---
+import Header from "../components/header/Header.astro";
+
+const {
+    title,
+    description,
+    url = "https://albcosmetology.com"
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+        <title>{title}</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta name="title" content={title} />
+        <meta name="description" content={description} />
+        <meta name="author" content="Ashley Lynn Barreira" />
+
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="website" />
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">		
+	</head>
+	<body>
+        <main>
+            <slot />
+        </main>
+	</body>
+</html>
