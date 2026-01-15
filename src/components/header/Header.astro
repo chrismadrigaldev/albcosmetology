@@ -1,10 +1,10 @@
 ---
 import ContactHeader from "./ContactHeader.astro";
 import Navbar from "./navbar/Navbar.astro";
-
+import headerStyles from "../../styles/header/headerStyles.module.css"
 ---
 
-<header>
+<header class={headerStyles.headerContainer}>
     <ContactHeader />
     <Navbar />
 </header>

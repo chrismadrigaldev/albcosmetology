@@ -9,9 +9,9 @@
       "devDependencies": {
         "@types/bun": "latest",
         "gh-pages": "^6.3.0",
-        "typescript": "^5.7.3",
-      },
-    },
+        "typescript": "^5.7.3"
+      }
+    }
   },
   "packages": {
     "@astrojs/compiler": ["@astrojs/compiler@2.13.0", "", {}, "sha512-mqVORhUJViA28fwHYaWmsXSzLO9osbdZ5ImUfxBarqsYdMlPbqAqGJCxsNzvppp1BEzc1mJNjOVvQqeDN8Vspw=="],

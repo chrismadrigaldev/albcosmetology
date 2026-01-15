@@ -1,10 +1,11 @@
 ---
 import BookNowButton from "./BookNowButton.astro";
 import NavbarLinks from "./NavbarLinks.astro";
+import navbarStyles from "../../../styles/header/navbarStyles.module.css"
 ---
 
-<nav>
-    <a href="/">
+<nav class={navbarStyles.navbarContainer}>
+    <a href="/" style="align-items: center; display: flex">
         IMAGE
     </a>
     <NavbarLinks />
