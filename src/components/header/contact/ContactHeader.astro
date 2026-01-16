@@ -1,0 +1,19 @@
+---
+import headerStyles from "../../../styles/header/header.module.css"
+import SocialMediaLinks from "./SocialMediaLinks.astro"
+---
+
+<div class={headerStyles.contactContainer}>
+    <div class={headerStyles.contactTextContainer}>
+        <div style="display: flex; align-items: center; gap: 5px">
+            <span style="color: #222222; fontSize: 14px">Call:</span>
+            <a 
+                href="tel:+17326147713" 
+                style="color: #222222; fontSize: 14px"
+            >
+                +1 (732) 614 - 7713
+            </a>
+        </div>
+        <SocialMediaLinks />
+    </div>
+</div>

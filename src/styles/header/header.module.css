@@ -1,0 +1,38 @@
+.headerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactContainer {
+    background-color: #f2f2f2;
+}
+
+.contactTextContainer {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0.3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialMediaLinksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.socialMediaIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMediaIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
