@@ -4,17 +4,30 @@
     flex-direction: column;
 }
 
-.contactContainer {
-    background-color: #f2f2f2;
+.contactBackground {
+    background-color: var(--gold-deep);
 }
 
-.contactTextContainer {
+.contactContainer {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0.3rem 0;
+    padding: 0.1rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.contactTextContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--header-text);
+}
+
+.contactTextContainer a {
+    color: var(--header-text);
 }
 
 .socialMediaLinksContainer {
@@ -25,12 +38,10 @@
 }
 
 .socialMediaIcon {
-    width: 32px;
-    height: 32px;
-    
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .socialMediaIcon img {
@@ -38,4 +49,19 @@
     height: 100%;
     object-fit: contain;
     display: block;
+}
+
+.instagram {
+    width: 28px;
+    height: 28px;
+}
+
+.linkedin {
+    width: 25px;
+    height: 25px;
+}
+
+.tiktok {
+    width: 30px;
+    height: 30px;
 }

@@ -1,47 +1,62 @@
 :root {
-  --font-heading: 'Playfair Display', serif;
-  --font-body: 'Lato', sans-serif;
+   --font-heading: 'Playfair Display', serif;
+   --font-body: 'Lato', sans-serif;
 
-  --base-font-size: 16px;
-  --line-height: 1.5;
-  --font-weight: 400;
-  
-  --color-text: #f2f2f2;           
-  --background-color: #1C1917;     
-  --accent-color: #39ff14;         
-  --border-color: #222;            
+   --base-font-size: 16px;
+   --line-height: 1.5;
+   --font-weight: 400;
+
+   --main-page-light: #F4F3EE;
+   --main-page-warm: #EAE6DA;
+   --main-text-color: #1C1C1A;
+   --secondary-text-color: #5E5E5B;
+
+   --header-gold: #C9A24D;
+   --header-green: #244E3D;
+   --header-text: #F4F3EE;
+
+   --forest-deep: #0F2A1F;
+   --forest-main: #1E4D3A;
+   --forest-soft: #2F6B52;
+   --forest-mist: #5F8F7A;
+
+   --gold-bright: #E6C87A;
+   --gold-main: #C9A24D;
+   --gold-deep: #9E7C2F;
+   --gold-glow: #F3E6B1;
+
 }
 
 html {
-  font-family: var(--font-body);
-  font-size: var(--base-font-size);
-  height: 100%;
+   font-family: var(--font-body);
+   font-size: var(--base-font-size);
+   height: 100%;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+   font-synthesis: none;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  background-color: var(--background-color);
-  color: var(--color-text);
-  display: flex;
-  flex-direction: column;
-  line-height: var(--line-height);
-  overflow-x: hidden;
+   margin: 0;
+   padding: 0;
+   min-height: 100vh;
+   background-color: var(--main-page-light);
+   color: var(--main-text-color);
+   display: flex;
+   flex-direction: column;
+   line-height: var(--line-height);
+   overflow-x: hidden;
 }
 
 main {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;   
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;   
 }
 
 /* ===========================
