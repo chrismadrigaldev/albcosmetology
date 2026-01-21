@@ -1,3 +1,9 @@
+:root {
+   --social-media-icon-size: 28px;
+   --social-media-icon-bg-size: 24px;
+   --social-media-icon-bg-color: #F4F3EE;
+}
+
 .headerContainer {
     width: 100%;
     display: flex;

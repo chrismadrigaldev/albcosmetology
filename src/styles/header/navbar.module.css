@@ -25,3 +25,7 @@
     display: flex;
     gap: 25px;
 }
+
+.bookNowButton {
+    background-color: var(--gold-bright)
+}

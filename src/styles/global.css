@@ -1,4 +1,6 @@
 :root {
+
+   /* Main Font Sizes, Family, etc  */
    --font-heading: 'Playfair Display', serif;
    --font-body: 'Lato', sans-serif;
 
@@ -6,15 +8,18 @@
    --line-height: 1.5;
    --font-weight: 400;
 
+   /* Main Page Colors */
    --main-page-light: #F4F3EE;
    --main-page-warm: #EAE6DA;
    --main-text-color: #1C1C1A;
    --secondary-text-color: #5E5E5B;
 
+   /* Header/Footer Colors */
    --header-gold: #C9A24D;
    --header-green: #244E3D;
    --header-text: #F4F3EE;
 
+   /* General Use Colors */
    --forest-deep: #0F2A1F;
    --forest-main: #1E4D3A;
    --forest-soft: #2F6B52;
