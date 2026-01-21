@@ -5,12 +5,16 @@ import SocialMediaLinks from "./SocialMediaLinks.astro"
 
 <div class={headerStyles.contactBackground}>
     <div class={headerStyles.contactContainer}>
-        <div class={headerStyles.contactTextContainer}>
-            <span>Call:</span>
-            <a href="tel:+17326147713">
+        <a 
+            href="tel:+17326147713"
+            class={headerStyles.contactTextContainer}
+        >
+            <img src="telephone.svg"/>
+            Call: 
+            <span class={headerStyles.contactNumberLink}>
                 +1 (732) 614 - 7713
-            </a>
-        </div>
+            </span>
+        </a>
         <SocialMediaLinks />
     </div>
 </div>

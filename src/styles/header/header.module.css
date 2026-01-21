@@ -20,14 +20,22 @@
 .contactTextContainer {
     display: flex;
     align-items: center;
-    gap: 5px;
     font-size: 14px;
-    font-weight: 700;
     color: var(--header-text);
+    text-decoration: none;
+    font-weight: 700;
+    gap: 7px;
 }
 
-.contactTextContainer a {
-    color: var(--header-text);
+.contactTextContainer img {
+    height: 18px;
+    width: 18px;
+    object-fit: contain;
+    display: block;
+}
+
+.contactNumberLink {
+    text-decoration: underline;
 }
 
 .socialMediaLinksContainer {
@@ -38,6 +46,9 @@
 }
 
 .socialMediaIcon {
+    width: 28px;
+    height: 28px; 
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,19 +60,6 @@
     height: 100%;
     object-fit: contain;
     display: block;
-}
-
-.instagram {
-    width: 28px;
-    height: 28px;
-}
-
-.linkedin {
-    width: 25px;
-    height: 25px;
-}
-
-.tiktok {
-    width: 30px;
-    height: 30px;
+    background-color: var(--header-text);
+    border-radius: 50%;
 }
