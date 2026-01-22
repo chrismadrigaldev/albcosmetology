@@ -5,7 +5,7 @@
 .navbarTextContainer{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,7 +15,12 @@
     color: var(--gold-bright); 
     text-decoration: none; 
     align-items: center; 
-    display: flex
+    display: flex;
+    padding: 0.5rem;
+}
+
+.navbarLink:hover {
+    color: var(--header-text);
 }
 
 .navbarLinksList {
@@ -23,9 +28,25 @@
     padding: 0;
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 20px;
 }
 
 .bookNowButton {
-    background-color: var(--gold-bright)
+    background-color: var(--gold-main);
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    color: var(--header-text);
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.bookNowButton:hover {
+    background-color: var(--gold-deep);
+    color: var(--header-text);
+}
+
+.bookNowButton:active {
+    background-color: var(--gold-dark);
 }

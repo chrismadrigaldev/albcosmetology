@@ -15,7 +15,7 @@
    --secondary-text-color: #5E5E5B;
 
    /* Header/Footer Colors */
-   --header-gold: #C9A24D;
+   --header-gold: #9E7C2F;
    --header-green: #244E3D;
    --header-text: #F4F3EE;
 
@@ -25,9 +25,10 @@
    --forest-soft: #2F6B52;
    --forest-mist: #5F8F7A;
 
-   --gold-bright: #E6C87A;
+   --gold-bright: #D6B971;
    --gold-main: #C9A24D;
    --gold-deep: #9E7C2F;
+   --gold-dark: #816420;
    --gold-glow: #F3E6B1;
 }
 

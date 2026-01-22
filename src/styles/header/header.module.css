@@ -11,7 +11,7 @@
 }
 
 .contactBackground {
-    background-color: var(--gold-deep);
+    background-color: var(--header-gold);
 }
 
 .contactContainer {
@@ -48,7 +48,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
 }
 
 .socialMediaIcon {
