@@ -8,11 +8,11 @@
     "build": "astro build",
     "preview": "astro preview",
     "predeploy": "bun run build",
-    "deploy": "gh-pages -d dist",
-    "remind-me": "bun run scripts/remind-me.ts"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "astro": "^5.16.9"
+    "@astrojs/compiler": "^2.13.0",
+    "astro": "5.16.16"
   },
   "devDependencies": {
     "@types/bun": "latest",

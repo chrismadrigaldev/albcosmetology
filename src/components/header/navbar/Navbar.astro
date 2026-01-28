@@ -1,5 +1,4 @@
 ---
-import BookNowButton from "./BookNowButton.astro";
 import NavbarLinks from "./NavbarLinks.astro";
 import navbarStyles from "../../../styles/header/navbar.module.css"
 ---
@@ -10,6 +9,8 @@ import navbarStyles from "../../../styles/header/navbar.module.css"
             IMAGE
         </a>
         <NavbarLinks />
-        <BookNowButton />
+        <button class={navbarStyles.bookNowButton}>
+            Book Now
+        </button>
     </div>
 </nav>
