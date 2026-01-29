@@ -22,16 +22,22 @@
 .footerLinkContainer {
     max-width: 1200px;
     width: 100%;
+    margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: clamp(1rem, 3vw, 3rem);
-    margin: 0 auto;
-    align-items: center;
+
+    justify-items: center;  
+    align-items: start;     
 }
 
 .footerLinkList {
     list-style: none;
+    margin: 0;
+    padding: 0;                
 }
+
 
 .footerLinkList a {
     color: inherit;
