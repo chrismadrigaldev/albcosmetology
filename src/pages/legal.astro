@@ -1,10 +1,271 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
+import legalStyles from "../styles/legal/legal.module.css"
 ---
 
 <PageLayout
-	title="ALB Cosmetology | Legal"
-	description="The Legal Page for ALB Cosmetology"
+  title="ALB Cosmetology | Legal"
+  description="The Legal Page for ALB Cosmetology"
 >
-	<h1>This is the legal page of the website</h1>
+  <h1>Legal Disclaimer, Terms of Use & Policies</h1>
+  <p style="font-style: italic;">Last updated: 1/28/2026</p>
+  <p>
+    This Legal Page is intended to protect the licensed cosmetologist, the
+    business, and the website owner by clearly defining services, limitations,
+    user responsibilities, and legal boundaries. By accessing or using this
+    website, booking services, or communicating through this platform, you agree
+    to the terms outlined below.
+  </p>
+
+  <ol class={legalStyles.legalSections}>
+    <li>
+      <h2>General Disclaimer</h2>
+      <p>
+        All services provided by <strong>ALB Cosmetology</strong> are performed by
+        a licensed cosmetologist in accordance with the laws and regulations of
+        the State of New Jersey. Results from cosmetology services may vary based
+        on individual factors including, but not limited to, hair type, skin
+        condition, prior treatments, maintenance habits, and adherence to
+        aftercare instructions.
+      </p>
+      <p>
+        No guarantees are made regarding specific outcomes. By receiving
+        services, you acknowledge and accept the inherent risks associated with
+        cosmetology treatments.
+      </p>
+    </li>
+
+    <li>
+      <h2>Not Medical Advice</h2>
+      <p>
+        The information on this website is for general informational purposes
+        only and is <strong>not</strong> intended as medical advice. Services
+        provided are cosmetic in nature and do not replace consultation with a
+        licensed medical professional, dermatologist, or physician.
+      </p>
+      <p>
+        If you have a medical condition, allergy, sensitivity, or are pregnant,
+        it is your responsibility to consult a medical professional prior to
+        receiving services.
+      </p>
+    </li>
+
+    <li>
+      <h2>Client Responsibility &amp; Disclosure</h2>
+      <p>Clients are solely responsible for:</p>
+      <ul class={legalStyles.legalBullets}>
+        <li>
+          Disclosing all relevant medical conditions, allergies, medications, and
+          prior cosmetic treatments
+        </li>
+        <li>
+          Informing the cosmetologist of any discomfort, irritation, or adverse
+          reactions immediately
+        </li>
+        <li>Following all pre-service and post-service care instructions provided</li>
+      </ul>
+      <p>
+        Failure to disclose relevant information releases the cosmetologist and
+        business from liability for adverse outcomes.
+      </p>
+    </li>
+
+    <li>
+      <h2>Allergy &amp; Sensitivity Disclaimer</h2>
+      <p>
+        While professional-grade products are used, <strong>ALB Cosmetology</strong>
+        cannot guarantee that clients will not experience allergic reactions,
+        irritation, or sensitivity. Patch tests are recommended and may be
+        required for certain services.
+      </p>
+      <p>
+        By proceeding with services, you acknowledge the risk of allergic
+        reactions and release the cosmetologist from liability related to such
+        reactions, unless caused by proven negligence.
+      </p>
+    </li>
+
+    <li>
+      <h2>Service Limitations &amp; Refusal of Service</h2>
+      <p><strong>ALB Cosmetology</strong> reserves the right to:</p>
+      <ul class={legalStyles.legalBullets}>
+        <li>
+          Refuse service to any individual for safety, health, ethical, or
+          professional reasons
+        </li>
+        <li>Discontinue a service if it is deemed unsafe or inappropriate</li>
+        <li>
+          Modify or cancel services if a client provides inaccurate or incomplete
+          information
+        </li>
+      </ul>
+      <p>Refusal of service does not constitute discrimination.</p>
+    </li>
+
+    <li>
+      <h2>Website Use Disclaimer</h2>
+      <p>
+        This website is provided on an &quot;as is&quot; and &quot;as available&quot;
+        basis. We make no warranties regarding:
+      </p>
+      <ul class={legalStyles.legalBullets}>
+        <li>Website uptime or availability</li>
+        <li>Accuracy or completeness of information</li>
+        <li>Technical errors, bugs, or interruptions</li>
+      </ul>
+      <p>Use of this website is at your own risk.</p>
+    </li>
+
+    <li>
+      <h2>Online Booking &amp; Communication</h2>
+      <p>
+        By booking services online or contacting us through this website, you
+        acknowledge:
+      </p>
+      <ul class={legalStyles.legalBullets}>
+        <li>Appointment times are estimates and may vary</li>
+        <li>Deposits and cancellation policies apply as stated at time of booking</li>
+        <li>
+          Failure to comply with policies may result in fees or refusal of future
+          bookings
+        </li>
+      </ul>
+      <p>
+        <strong>ALB Cosmetology</strong> is not responsible for missed
+        communications due to incorrect contact information provided by the client.
+      </p>
+    </li>
+
+    <li>
+      <h2>Cancellation, No-Show &amp; Late Policy</h2>
+      <p>
+        Clients are responsible for reviewing and adhering to all booking
+        policies. These policies may include:
+      </p>
+      <ul class={legalStyles.legalBullets}>
+        <li>Required deposits</li>
+        <li>Minimum notice for cancellations</li>
+        <li>Fees for late arrivals or no-shows</li>
+      </ul>
+      <p>Policies are subject to change and will be communicated via the booking platform.</p>
+    </li>
+
+    <li>
+      <h2>Results, Maintenance &amp; Aftercare</h2>
+      <p>
+        Cosmetology results are not permanent and require maintenance. The
+        longevity of services depends on:
+      </p>
+      <ul class={legalStyles.legalBullets}>
+        <li>Client lifestyle</li>
+        <li>Product usage</li>
+        <li>Environmental factors</li>
+      </ul>
+      <p>
+        Failure to follow aftercare instructions releases <strong>ALB Cosmetology</strong>
+        from responsibility for diminished or altered results.
+      </p>
+    </li>
+
+    <li>
+      <h2>Photography &amp; Marketing Consent</h2>
+      <p>
+        By receiving services, you may be asked to consent to photographs or
+        videos for marketing, educational, or promotional purposes. Consent may
+        be withdrawn in writing at any time.
+      </p>
+      <p>Images will never be sold to third parties.</p>
+    </li>
+
+    <li>
+      <h2>Intellectual Property</h2>
+      <p>
+        All website content, including text, images, logos, branding, and designs,
+        is the intellectual property of <strong>ALB Cosmetology</strong> and may
+        not be reproduced, distributed, or used without written permission.
+      </p>
+    </li>
+
+    <li>
+      <h2>Third-Party Links</h2>
+      <p>
+        This website may contain links to third-party websites.
+        <strong>ALB Cosmetology</strong> is not responsible for the content,
+        privacy practices, or policies of external sites.
+      </p>
+    </li>
+
+    <li>
+      <h2>Limitation of Liability</h2>
+      <p>
+        To the fullest extent permitted by law, <strong>ALB Cosmetology</strong>
+        and its cosmetologist shall not be liable for:
+      </p>
+      <ul class={legalStyles.legalBullets}>
+        <li>Indirect, incidental, or consequential damages</li>
+        <li>Allergic reactions or sensitivities</li>
+        <li>Dissatisfaction with cosmetic results</li>
+        <li>Website-related errors or interruptions</li>
+      </ul>
+      <p>Total liability shall not exceed the amount paid for the service rendered.</p>
+    </li>
+
+    <li>
+      <h2>Indemnification</h2>
+      <p>
+        You agree to indemnify and hold harmless <strong>ALB Cosmetology</strong>
+        and its cosmetologist from any claims, damages, losses, or legal fees
+        arising from:
+      </p>
+      <ul class={legalStyles.legalBullets}>
+        <li>Failure to disclose relevant information</li>
+        <li>Violation of policies</li>
+        <li>Misuse of the website</li>
+      </ul>
+    </li>
+
+    <li>
+      <h2>Privacy Policy Summary</h2>
+      <p>
+        Personal information collected through this website is used solely for
+        booking, communication, and service-related purposes. We do not sell or
+        share personal data except as required by law or necessary to provide
+        services.
+      </p>
+      <p>Full privacy details may be provided upon request.</p>
+    </li>
+
+    <li>
+      <h2>Governing Law</h2>
+      <p>
+        These terms are governed by the laws of the State of New Jersey, without
+        regard to conflict-of-law principles.
+      </p>
+    </li>
+
+    <li>
+      <h2>Changes to This Legal Page</h2>
+      <p>
+        <strong>ALB Cosmetology</strong> reserves the right to update or modify
+        this Legal Page at any time. Continued use of the website constitutes
+        acceptance of the revised terms.
+      </p>
+    </li>
+
+    <li>
+      <h2>Contact Information</h2>
+      <p>For questions regarding this Legal Page, please contact:</p>
+      <ul class={legalStyles.contactList}>
+        <li><strong>ALB Cosmetology</strong></li>
+        <li>Email: contact@albcosmetology.com</li>
+        <li>Phone: +1 (732) 614-7713</li>
+      </ul>
+      <p>
+        <strong>
+          By using this website or receiving services, you acknowledge that you
+          have read, understood, and agreed to these terms.
+        </strong>
+      </p>
+    </li>
+  </ol>
 </PageLayout>
