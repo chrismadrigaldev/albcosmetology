@@ -19,14 +19,24 @@
     color: var(--gold-main); 
 }
 
-.footerLink {
-    color: inherit;
-    text-decoration: none; 
-    align-items: center; 
-    display: flex;
-    padding: 0.5rem;
+.footerLinkContainer {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: clamp(1rem, 3vw, 3rem);
+    margin: 0 auto;
+    align-items: center;
 }
 
+.footerLinkList {
+    list-style: none;
+}
+
+.footerLinkList a {
+    color: inherit;
+    text-decoration: none; 
+}
 
 .legalBackground {
     background-color: var(--header-gold);

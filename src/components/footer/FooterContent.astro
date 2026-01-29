@@ -1,15 +1,14 @@
 ---
 import footerStyles from "../../styles/footer/footer.module.css"
+import FooterLinks from "./FooterLinks.astro"
 ---
 
 
 <div class={footerStyles.footerContentBackground}>
     <div class={footerStyles.footerContentTextContainer}>
-        <a href="/" class={footerStyles.footerLink}>
-            IMAGE
+        <a href="/" style="text-decoration: none; color: inherit">
+            LOGO
         </a>
-        <p class={footerStyles.footerLink}>
-            This is the Footer Content
-        </p>
+        <FooterLinks />
     </div>
 </div>

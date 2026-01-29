@@ -1,36 +1,41 @@
+.legalTextContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+
 .legalSections {
   counter-reset: section;
   list-style: none;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem 0;
 }
 
 .legalSections > li {
   counter-increment: section;
-  margin: 2.5rem 0;
 }
 
 .legalSections h2::before {
   content: counter(section) ". ";
   font-weight: inherit;
   font-size: inherit;
-  color: inherit;
 }
 
 .legalSections h2 {
-  margin: 0 0 0.5rem;
-  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .legalBullets {
   margin: 0.75rem 0;
-  padding-left: 1.25rem;
+  padding-left: 2rem;
   text-align: left;
 }
 
 .contactList {
   list-style: none;
-  padding-left: 0;
-  margin: 0.5rem 0 1rem;
+  margin: 1rem 0;
 }
