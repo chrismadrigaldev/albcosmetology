@@ -47,6 +47,30 @@
     text-decoration: none; 
 }
 
+.socialMediaLinksContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -6px;
+}
+
+.socialMediaIcon {
+    width: 32px;
+    height: 32px; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.socialMediaIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
 .legalBackground {
     background-color: var(--header-gold);
 }
