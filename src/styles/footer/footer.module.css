@@ -21,7 +21,7 @@
 }
 
 .footerLinkContainer {
-  max-width: 900px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
@@ -99,7 +99,7 @@
     text-decoration: underline;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .footerLinkContainer {
     display: flex;
     flex-direction: column;
