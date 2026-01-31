@@ -25,6 +25,8 @@
    --forest-soft: #2F6B52;
    --forest-mist: #5F8F7A;
 
+   --header-soomething: #244E3D;
+
    --gold-bright: #D6B971;
    --gold-main: #C9A24D;
    --gold-deep: #9E7C2F;
@@ -55,13 +57,19 @@ body {
    overflow-x: hidden;
 }
 
-main {
-   display: flex;
-   flex: 1;
-   flex-direction: column;
-   width: 100%;
+.main-bg {
+   background-image: url("/leaves.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   min-height: 100vh;
+}
+
+.main-content {
    max-width: 1200px;
-   margin: 0 auto;   
+   margin: 0 auto;
+   padding: 2rem;
+   background-color: var(--main-page-light); 
 }
 
 /* ===========================
