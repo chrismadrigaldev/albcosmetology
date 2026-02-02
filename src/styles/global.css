@@ -1,125 +1,170 @@
 :root {
 
-   /* Main Font Sizes, Family, etc  */
-   --font-heading: 'Playfair Display', serif;
-   --font-body: 'Lato', sans-serif;
+  /* =========================
+     FONT FAMILIES
+     ========================= */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
 
-   --base-font-size: 16px;
-   --line-height: 1.5;
-   --font-weight: 400;
+  /* =========================
+     BASE TYPOGRAPHY
+     ========================= */
+  --base-font-size: 16px;
+  --line-height: 1.5;
+  --font-weight: 400;
 
-   /* Main Page Colors */
-   --main-page-light: #F4F3EE;
-   --main-page-warm: #EAE6DA;
-   --main-text-color: #1C1C1A;
-   --secondary-text-color: #5E5E5B;
+  /* =========================
+     HEADING SCALE (rem-based)
+     ========================= */
+  --h1-size: 2.5rem;  /* ~40–48px */
+  --h2-size: 2rem;    /* ~32–38px */
+  --h3-size: 1.6rem;  /* ~25–30px */
 
-   /* Header/Footer Colors */
-   --header-gold: #9E7C2F;
-   --header-green: #244E3D;
-   --header-text: #F4F3EE;
+  /* =========================
+     MAIN PAGE COLORS
+     ========================= */
+  --main-page-light: #F4F3EE;
+  --main-page-warm: #EAE6DA;
+  --main-text-color: #1C1C1A;
+  --secondary-text-color: #5E5E5B;
 
-   /* General Use Colors */
-   --forest-deep: #0F2A1F;
-   --forest-main: #1E4D3A;
-   --forest-soft: #2F6B52;
-   --forest-mist: #5F8F7A;
+  /* =========================
+     HEADER / FOOTER COLORS
+     ========================= */
+  --header-gold: #9E7C2F;
+  --header-green: #244E3D;
+  --header-text: #F4F3EE;
 
-   --header-soomething: #244E3D;
+  /* =========================
+     GENERAL USE COLORS
+     ========================= */
+  --forest-deep: #0F2A1F;
+  --forest-main: #1E4D3A;
+  --forest-soft: #2F6B52;
+  --forest-mist: #5F8F7A;
 
-   --gold-bright: #D6B971;
-   --gold-main: #C9A24D;
-   --gold-deep: #9E7C2F;
-   --gold-dark: #816420;
-   --gold-glow: #F3E6B1;
+  --gold-bright: #D6B971;
+  --gold-main: #C9A24D;
+  --gold-deep: #9E7C2F;
+  --gold-dark: #816420;
+  --gold-glow: #F3E6B1;
 }
 
+/* =========================
+   GLOBAL BASE
+   ========================= */
 html {
-   font-family: var(--font-body);
-   font-size: var(--base-font-size);
-   height: 100%;
+  font-family: var(--font-body);
+  font-size: var(--base-font-size);
+  height: 100%;
 
-   font-synthesis: none;
-   text-rendering: optimizeLegibility;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-   margin: 0;
-   padding: 0;
-   min-height: 100vh;
-   background-color: var(--main-page-light);
-   color: var(--main-text-color);
-   display: flex;
-   flex-direction: column;
-   line-height: var(--line-height);
-   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--main-page-light);
+  color: var(--main-text-color);
+  display: flex;
+  flex-direction: column;
+  line-height: var(--line-height);
+  overflow-x: hidden;
 }
 
+/* =========================
+   HEADINGS
+   ========================= */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
 .main-bg {
-   background-image: url("/leaves.jpg");
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   min-height: 100vh;
+  background-image: url("/leaves.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .main-content {
-   max-width: 1200px;
-   margin: 0 auto;
-   padding: 2rem;
-   background-color: var(--main-page-light); 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--main-page-light);
 }
 
-/* ===========================
-   XS — Phones (extra small)
-   max-width: 480px
-   =========================== */
+/* =========================
+   RESPONSIVE FONT SIZES
+   ========================= */
+
+/* XS — Small phones */
 @media (max-width: 480px) {
-  
+  :root {
+    --base-font-size: 15px;
+  }
 }
 
-/* ===========================
-   SM — Phones (large)
-   max-width: 640px
-   =========================== */
+/* SM — Large phones */
 @media (max-width: 640px) {
-  
+  :root {
+    --base-font-size: 16px;
+  }
 }
 
-/* ===========================
-   MD — Tablets
-   max-width: 768px
-   =========================== */
+/* MD — Tablets */
 @media (max-width: 768px) {
-  
+  :root {
+    --base-font-size: 16.5px;
+  }
 }
 
-/* ===========================
-   LG — Small laptops
-   max-width: 1024px
-   =========================== */
+/* LG — Small laptops */
 @media (max-width: 1024px) {
-
+  :root {
+    --base-font-size: 17px;
+  }
 }
 
-/* ===========================
-   XL — Desktop
-   max-width: 1280px
-   =========================== */
+/* XL — Desktop */
 @media (max-width: 1280px) {
-
+  :root {
+    --base-font-size: 18px;
+  }
 }
 
-/* ===========================
-   2XL — Large Desktop / 1440p
-   max-width: 1536px
-   =========================== */
+/* 2XL — Large desktop / 1440p */
 @media (max-width: 1536px) {
-
+  :root {
+    --base-font-size: 19px;
+  }
 }
 
+/* =========================
+   RESET
+   ========================= */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
