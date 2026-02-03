@@ -5,7 +5,7 @@
 .navbarTextContainer{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,10 +14,17 @@
 
 .navbarLink {
     color: inherit;
+    font-size: 1.15rem;
     text-decoration: none; 
     align-items: center; 
     display: flex;
     padding: 0.5rem;
+}
+
+.navbarLogo {
+    width: clamp(110px, 6vw, 160px);
+    height: auto;
+    display: block;
 }
 
 .navbarLink:hover {

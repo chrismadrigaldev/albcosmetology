@@ -11,7 +11,7 @@
 .contactContainer {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0.1rem 0;
+    padding: 0.1rem 0 0.1rem 0.35rem;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -117,48 +117,76 @@ h3 {
 }
 
 /* =========================
-   RESPONSIVE FONT SIZES
+   RESPONSIVE TYPE (practical + explicit)
    ========================= */
 
-/* XS — Small phones */
+/* Small phones */
 @media (max-width: 480px) {
   :root {
     --base-font-size: 15px;
+    --h1-size: 2rem;
+    --h2-size: 1.65rem;
+    --h3-size: 1.35rem;
   }
 }
 
-/* SM — Large phones */
-@media (max-width: 640px) {
+/* Large phones */
+@media (min-width: 481px) and (max-width: 640px) {
+  :root {
+    --base-font-size: 15.5px;
+    --h1-size: 2.15rem;
+    --h2-size: 1.8rem;
+    --h3-size: 1.45rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 641px) and (max-width: 768px) {
   :root {
     --base-font-size: 16px;
+    --h1-size: 2.3rem;
+    --h2-size: 1.9rem;
+    --h3-size: 1.55rem;
   }
 }
 
-/* MD — Tablets */
-@media (max-width: 768px) {
+/* Small laptops / large tablets landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
   :root {
-    --base-font-size: 16.5px;
+    --base-font-size: 16px;
+    --h1-size: 2.45rem;
+    --h2-size: 2rem;
+    --h3-size: 1.6rem;
   }
 }
 
-/* LG — Small laptops */
-@media (max-width: 1024px) {
+/* Desktop / 1080p (most common) */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  :root {
+    --base-font-size: 16px;
+    --h1-size: 2.5rem;
+    --h2-size: 2rem;
+    --h3-size: 1.6rem;
+  }
+}
+
+/* Large desktop / 1440p+ */
+@media (min-width: 1440px) and (max-width: 1919px) {
   :root {
     --base-font-size: 17px;
+    --h1-size: 2.85rem;
+    --h2-size: 2.3rem;
+    --h3-size: 1.85rem;
   }
 }
 
-/* XL — Desktop */
-@media (max-width: 1280px) {
+/* 4K / very large screens */
+@media (min-width: 1920px) {
   :root {
     --base-font-size: 18px;
-  }
-}
-
-/* 2XL — Large desktop / 1440p */
-@media (max-width: 1536px) {
-  :root {
-    --base-font-size: 19px;
+    --h1-size: 3.1rem;
+    --h2-size: 2.5rem;
+    --h3-size: 2rem;
   }
 }
 
