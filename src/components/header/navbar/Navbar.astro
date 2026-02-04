@@ -1,16 +1,26 @@
 ---
 import NavbarLinks from "./NavbarLinks.astro";
-import navbarStyles from "../../../styles/header/navbar.module.css"
+import navbarStyles from "../../../styles/header/navbar.module.css";
 ---
 
 <nav class={navbarStyles.navbarBackground}>
     <div class={navbarStyles.navbarTextContainer}>
         <a href="/" class={navbarStyles.navbarLink}>
-            <img src="/icons/logo.svg" class={navbarStyles.navbarLogo}>
+        <img src="/icons/logo.svg" class={navbarStyles.navbarLogo} alt="ALB Cosmetology" />
         </a>
-        <NavbarLinks />
-        <button class={navbarStyles.bookNowButton}>
-            Book Now
-        </button>
+
+        <div class={navbarStyles.navLinksDesktop}>
+            <NavbarLinks />
+        </div>
+
+        <div class={navbarStyles.navbarMobileView}>
+            <button class={navbarStyles.bookNowButton}>Book Now</button>
+
+            <button class={navbarStyles.hamburgerButton}>
+                <span class={navbarStyles.hamburgerBar}></span>
+                <span class={navbarStyles.hamburgerBar}></span>
+                <span class={navbarStyles.hamburgerBar}></span>
+            </button>
+        </div>
     </div>
 </nav>

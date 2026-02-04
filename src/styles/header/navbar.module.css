@@ -5,7 +5,7 @@
 .navbarTextContainer{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0;
+    padding-right: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,7 +14,7 @@
 
 .navbarLink {
     color: inherit;
-    font-size: 1.15rem;
+    font-size: clamp(0.9rem, 0.85rem + 0.30vw, 1.12rem);
     text-decoration: none; 
     align-items: center; 
     display: flex;
@@ -41,8 +41,8 @@
 
 .bookNowButton {
     background-color: var(--gold-main);
-    padding: 0.5rem 1rem;
-    font-size: 16px;
+    font-size: clamp(0.9rem, 0.85rem + 0.30vw, 1.12rem);
+    padding: 0.75rem 1rem;
     color: var(--header-text);
     border-radius: 5px;
     box-shadow: none;
@@ -57,4 +57,43 @@
 
 .bookNowButton:active {
     background-color: var(--gold-dark);
+}
+
+.navLinksDesktop {
+  display: flex;
+}
+
+.navbarMobileView {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.hamburgerButton {
+  display: none;
+  background: none;
+  border: 0;
+  gap: 0.65rem;
+  cursor: pointer;
+}
+
+.hamburgerBar {
+    display: block;
+    width: 2.15rem;
+    height: 0.3rem;
+    border-radius: 5px;
+    background: var(--gold-main);
+}
+
+@media (max-width: 800px) {
+  .navLinksDesktop {
+    display: none;
+  }
+
+  .hamburgerButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
