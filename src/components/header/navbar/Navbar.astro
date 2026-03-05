@@ -1,26 +1,44 @@
 ---
-import NavbarLinks from "./NavbarLinks.astro";
-import navbarStyles from "../../../styles/header/navbar.module.css";
+import NavbarLinks from './NavbarLinks.astro';
+import navStyles from '../../../styles/header/navbar.module.css';
+import NavbarMobileLinks from './NavbarMobileLinks.astro';
 ---
 
-<nav class={navbarStyles.navbarBackground}>
-    <div class={navbarStyles.navbarTextContainer}>
-        <a href="/" class={navbarStyles.navbarLink}>
-        <img src="/icons/logo.svg" class={navbarStyles.navbarLogo} alt="ALB Cosmetology" />
+<nav class={navStyles.navBackground}>
+    <div class={navStyles.navTextContainer}>
+        <a href="/" class={navStyles.navLink}>
+            <img src="/src/images/logo.svg" class={navStyles.navLogo} alt="ALB Cosmetology" />
         </a>
+        
+        <NavbarLinks />
 
-        <div class={navbarStyles.navLinksDesktop}>
-            <NavbarLinks />
-        </div>
-
-        <div class={navbarStyles.navbarMobileView}>
-            <button class={navbarStyles.bookNowButton}>Book Now</button>
-
-            <button class={navbarStyles.hamburgerButton}>
-                <span class={navbarStyles.hamburgerBar}></span>
-                <span class={navbarStyles.hamburgerBar}></span>
-                <span class={navbarStyles.hamburgerBar}></span>
+        <div id="nav-mobile-view" class={navStyles.navMobileView}>
+            <button id="book-now-button" class={navStyles.bookNowButton}>
+                Book Now
+            </button>
+            <button id="hamburgerButton" class={navStyles.hamburgerButton} aria-expanded="false">
+                <span class={navStyles.hamburgerBar}></span>
+                <span class={navStyles.hamburgerBar}></span>
+                <span class={navStyles.hamburgerBar}></span>
             </button>
         </div>
     </div>
+
+    <NavbarMobileLinks />
 </nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const hamburgerButton = document.getElementById('hamburgerButton');
+        const navLinksList = document.getElementById('nav-links-list'); 
+
+        if (hamburgerButton && navLinksList) {
+            hamburgerButton.addEventListener('click', () => {
+                navLinksList.classList.toggle('isOpen'); 
+                const isExpanded = hamburgerButton.getAttribute('aria-expanded') === 'true';
+                hamburgerButton.setAttribute('aria-expanded', (!isExpanded).toString());
+                console.log(hamburgerButton.ariaExpanded);
+            });
+        }
+    });
+</script>
